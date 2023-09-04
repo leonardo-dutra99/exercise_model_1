@@ -9,6 +9,15 @@ MODELBEGIN
 // insert your equations here, ONLY between the MODELBEGIN and MODELEND words
 
 
+EQUATION("Price")
+/*
+Price today = prince yesterday + c
+*/
+
+v[0] = VL("Price", 1); //variable
+v[1] = V("c"); // parameter
+
+RESULT(v[0]+v[1])
 
 
 
