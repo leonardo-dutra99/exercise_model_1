@@ -5,7 +5,9 @@ Label Root
 	Label FIRM
 	{
 		Var: Price
-		Param: c
+		Var: C
+		Param: max
+		Param: min
 
 	}
 
@@ -19,7 +21,9 @@ Object: Root C	1
 
 Object: FIRM C	5
 Var: Price 1 s + n p	10	10	10	10	10
-Param: c 0 n + n n	6.03419273837391	6.12089259739439	3.30253959552953	0.644609272953198	1.53689081655159
+Var: C 0 n + n n
+Param: max 0 n + n n	10	10	10	10	10
+Param: min 0 n + n n	0	0	0	0	0
 
 SIM_NUM 1
 SEED 1
@@ -43,10 +47,20 @@ _INIT_
 All 5 instances drawn from uniform distribution between 10 and 0
 END_DESCRIPTION
 
-Parameter_c
+Variable_C
+
+END_DESCRIPTION
+
+Parameter_max
 
 _INIT_
-All 5 instances drawn from uniform distribution between 10 and 0
+All 5 instances equal to 10
+END_DESCRIPTION
+
+Parameter_min
+
+_INIT_
+All 5 instances equal to 0
 END_DESCRIPTION
 
 
@@ -83,7 +97,18 @@ v[1] = V("c"); // parameter
 RESULT(v[0]+v[1])
 
 
+EQUATION("C")
 
+v[0] = V("min");
+v[1] = V("max");
+v[2] = uniform(v[0], v[1]); 
+RESULT(v[2])
+
+/*
+EQUATION("C")
+v[0] =uniform(0, 10);  //variable
+RESULT(v[0])
+*/
 
 
 

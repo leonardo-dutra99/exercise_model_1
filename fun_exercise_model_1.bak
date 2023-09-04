@@ -15,7 +15,7 @@ Price today = prince yesterday + c
 */
 
 v[0] = VL("Price", 1); //variable
-v[1] = V("C"); // parameter
+v[1] = V("c"); // parameter
 
 RESULT(v[0]+v[1])
 

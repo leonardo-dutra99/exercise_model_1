@@ -7,10 +7,10 @@ exercise_model_1
 #
 #
 #
-1366x745+-15+20
+1366x745+-15+21
 #
-Sim1.lsd
+Sim2.lsd
 FIRM
 1
-0
+3
 0.0

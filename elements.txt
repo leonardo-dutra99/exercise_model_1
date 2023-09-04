@@ -1,2 +1,2 @@
-Price
-c
+C Price
+max min
