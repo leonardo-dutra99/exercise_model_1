@@ -1,0 +1,7 @@
+Model exercise_model_1 (ver. 1.0)
+
+Complexidade e GBM 2023
+Aula 2 LSD - 04/09/2023
+
+(PRESS CTRL+E TO EDIT EQUATIONS)
+
