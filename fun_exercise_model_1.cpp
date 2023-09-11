@@ -11,7 +11,7 @@ MODELBEGIN
 
 EQUATION("Price")
 /*
-Price today = prince yesterday + c
+Price today = price yesterday + c
 */
 
 v[0] = VL("Price", 1); //variable
